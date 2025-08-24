@@ -1,69 +1,123 @@
-
+/* 🔄 Reset básico */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Reseteo y tipografía */
+/* 🎨 Estilos generales */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #333;
+  line-height: 1.6;
+  background-color: #f8f9fa; /* Fondo claro */
+  color: #212529;
 }
 
-/* Navbar */
-.navbar {
-  transition: background-color 0.3s ease;
-}
-.navbar-dark .navbar-nav .nav-link {
-  color: #fff;
-  margin-left: 1rem;
-}
-.navbar-dark .navbar-nav .nav-link:hover {
-  color: #ffc107;
+h1, h2, h3, h4 {
+  font-weight: bold;
+  margin-bottom: 1rem;
 }
 
-/* Hero */
-section .display-4 {
-  font-weight: 700;
-  color: #222;
-}
-section .lead {
+p {
+  margin-bottom: 1rem;
   color: #555;
 }
 
-/* Cards de Servicios */
+/* 🔹 Navbar (igual en todas las páginas) */
+.navbar {
+  background-color: #0d6efd; /* Azul Bootstrap */
+}
+.navbar .nav-link {
+  color: white !important;
+  font-weight: 500;
+}
+.navbar .nav-link:hover {
+  color: #ffc107 !important; /* Amarillo */
+}
+
+/* 🏠 Hero Section (solo si una página lo usa) */
+.hero {
+  background: url('../img/hero.jpg') no-repeat center center/cover;
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 2.5rem;
+}
+.hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 15px auto;
+}
+
+/* 🃏 Tarjetas (Proyectos, Actividades, etc.) */
 .card {
   border: none;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-  transition: transform 0.2s ease;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 .card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
-.card .card-title {
-  color: #333;
-  margin-bottom: 0.5rem;
-}
-.card .btn {
-  margin-top: 1rem;
+.card-title {
+  color: #0d6efd;
 }
 
-/* Alert personalizado */
-.alert-info {
-  font-size: 1.1rem;
+/* 👤 Imagen perfil (Acerca de) */
+.perfil-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #0d6efd;
+  margin-bottom: 20px;
 }
 
-/* Footer */
+.card-img-top {
+  object-fit: cover;
+  height: 90%;
+}
+
+/* 📧 Formulario (para Contacto o formularios en otras páginas) */
+form .form-control {
+  border-radius: 10px;
+  padding: 12px;
+}
+form .btn {
+  border-radius: 10px;
+  padding: 10px 20px;
+  background-color: #0d6efd;
+  border: none;
+}
+form .btn:hover {
+  background-color: #0b5ed7;
+}
+
+/* 📦 Secciones generales */
+.section {
+  padding: 60px 20px;
+}
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2rem;
+  color: #0d6efd;
+}
+
+/* ⚡ Footer (igual en todas las páginas) */
 footer {
-  font-size: 0.9rem;
+  background: #212529;
+  color: #f8f9fa;
+  padding: 20px 0;
+  text-align: center;
 }
 footer a {
-  color: #ddd;
+  color: #0d6efd;
   text-decoration: none;
 }
 footer a:hover {
   text-decoration: underline;
 }
-
-/* Resp*
