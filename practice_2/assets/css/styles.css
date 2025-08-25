@@ -1,0 +1,12 @@
+/* Ejemplo simple de Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* También es una práctica común */
+}
+
+body {
+    font-size: 62.5%;
+    text-align: center;
+}
+
