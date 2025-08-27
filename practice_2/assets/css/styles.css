@@ -89,7 +89,7 @@ span {
   background-image: url(./img/fondo.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 30rem;
+  height: 35rem;
   text-align: center;
   position: relative;
 }
@@ -172,8 +172,8 @@ main section {
 
 
 main section svg {
-  width: 8rem;
-  height: 8rem;
+  width: 7rem;
+  height: 7rem;
 }
 
 main section h3 {
@@ -184,8 +184,8 @@ main section p{
 }
 
 .logo-container {
-  height: 14rem;
-  width: 14rem;
+  height: 12rem;
+  width: 12rem;
   background-color: var(--secondary);
   border-radius: 50%;
   display: flex;
