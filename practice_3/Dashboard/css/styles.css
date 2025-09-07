@@ -1,0 +1,303 @@
+body {
+  background-color: #f2f2f2;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Barra lateral */
+.barra-lateral {
+  background: #262a34;
+  color: #fff;
+  min-height: 100vh;
+  min-width: 300px;
+}
+
+.barra-lateral a {
+    color: #fff;
+}
+
+.barra-lateral .logo {
+  background: #0275db;
+}
+
+.barra-lateral .logo h2 {
+  font-size: 30px;
+  font-family: "Open Sans", sans-serif; /* o cambia a Roboto y cárgala */
+  text-align: center;
+  font-weight: 500; /* <-- sin px */
+  color: #fff;
+}
+
+/* Menú lateral */
+.barra-lateral .menu a {
+  color: #eaeaea;            /* asegura contraste */
+  transition: background .2s ease, color .2s ease;
+  display: block;
+  padding: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+
+}
+
+.barra-lateral .menu a:hover,
+.barra-lateral .menu a:focus {
+  background: rgba(255,255,255,0.08);
+  color: #fff;
+  border-left-color: #0d6efd; /* azul bootstrap */
+}
+
+.barra-lateral .menu a svg {
+  margin-right: 10px;
+}
+
+/* MAIN */
+
+.main {
+    padding-top: 40px;
+}
+
+.main .columna {
+    padding: 0 40px;
+}
+
+.main .titulo  {
+    color:#262a34;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 20px;
+}
+
+.main .widget {
+    margin-bottom: 40px;
+}
+
+.main .nueva_entrada form input[type="text"], 
+.main .nueva_entrada form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    font-family: "Open Sans", sans-serif;
+    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.2);
+}
+
+.main .nueva_entrada form textarea {
+    height: 400px;
+    min-height: 200px;
+    max-width: 100%;
+    min-width: 100%;
+}
+
+.main .nueva_entrada button {
+    background: #0275db;
+    cursor: pointer;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    display: inline-block;
+    padding: 10px;
+    width: 200px;
+    border-radius: 3px;
+    transition: .3s ease all;
+}
+
+.main .nueva_entrada button:hover{
+    background: #025aa5;
+}
+
+.main .nueva_entrada button svg {
+    margin-right: 10px;
+}
+
+.main .estadisticas .contenedor {
+    box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.2);
+}
+
+.main .estadisticas .caja {
+    background: #fff;
+    border: 1px solid #ffffff;
+    padding: 40px 20px;
+    flex: 1;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+}
+
+.main .estadisticas .caja h3{
+    color : #86f227;
+    margin-bottom: 10px;
+}
+.main .estadisticas .caja p {
+    color : #8b8b8b;
+    margin-bottom: 10px;
+}
+.main .estadisticas .caja:first-child {
+    border-left: none;
+}
+
+.main .estadisticas .caja:last-child {
+    border-left: none;
+}
+
+
+
+@media screen and (max-width: 320px) {
+  /* .barra-lateral {
+    min-height: auto;
+    width: 100%;
+  } */
+}
+
+@media screen and (max-width: 576px) {
+  .barra-lateral {
+    min-height: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 992px) {
+  /* .barra-lateral {
+    min-height: auto;
+    width: 100%;
+  } */
+}
+
+
+@media screen and (max-width: 1200px) {
+  .barra-lateral {
+    min-width: auto;
+  }
+
+  .barra-lateral .logo {
+    display: none;
+  }
+
+  .barra-lateral .menu a svg {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  /* .barra-lateral {
+    min-height: auto;
+    width: 100%;
+  } */
+}
+
+
+/* Evitar que el contenedor .titulo dentro de comentarios herede estilos del título */
+.widget.comentarios > .titulo {
+  margin: 0;              /* evita el margen de .main .titulo */
+  font-size: initial;
+  font-weight: initial;
+}
+
+/* Tarjeta del comentario */
+.widget.comentarios .comentario {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  padding: 16px;
+  gap: 12px;
+  align-items: flex-start; /* alinea foto y texto arriba */
+  box-shadow: 0 1px 1px rgba(0,0,0,.06);
+}
+
+/* Avatar circular */
+.widget.comentarios .foto img {
+  width: 64px;            /* sobrescribe el width del atributo si fuera mayor */
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  box-shadow: 0 0 0 2px #fff; /* pequeño borde blanco */
+}
+
+/* Texto del comentario */
+.widget.comentarios .texto {
+  flex: 1 1 auto;
+  min-width: 220px;
+}
+
+.widget.comentarios .texto a {
+  color: #0275db;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.widget.comentarios .texto a:hover {
+  text-decoration: underline;
+}
+
+.widget.comentarios .texto p {
+  margin: 0;
+  line-height: 1.45;
+}
+
+.widget.comentarios .texto .texto-comentario {
+  margin-top: 6px;
+  color: #4f4f4f;
+}
+
+/* Botones */
+.widget.comentarios .botones button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  margin: 6px;
+  border: none;
+  border-radius: 4px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #fff;
+  transition: transform .05s ease, filter .15s ease;
+}
+
+.widget.comentarios .botones button:active {
+  transform: translateY(1px);
+}
+
+/* Colores por acción */
+.widget.comentarios .botones .aprobar {
+  background: #28a745;         /* success */
+}
+.widget.comentarios .botones .aprobar:hover {
+  filter: brightness(0.95);
+}
+
+.widget.comentarios .botones .eliminar {
+  background: #dc3545;         /* danger */
+}
+.widget.comentarios .botones .eliminar:hover {
+  filter: brightness(0.95);
+}
+
+.widget.comentarios .botones .bloquear {
+  background: #6c757d;         /* secondary */
+}
+.widget.comentarios .botones .bloquear:hover {
+  filter: brightness(0.95);
+}
+
+.widget.comentarios .botones button svg {
+  flex: 0 0 auto;
+}
+
+h3 {
+    font-size: 30px !important;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+}
