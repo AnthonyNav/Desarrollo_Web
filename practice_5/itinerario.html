@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Itinerario - Safari Aventura</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet"> <!-- Font Awesome para iconos -->
+</head>
+<body>
+
+  <!-- Encabezado -->
+  <header class="bg-success text-white py-4">
+    <div class="container">
+      <h1 class="display-4">Itinerario del Safari</h1>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link text-white" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="itinerario.html">Itinerario</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Sección de Itinerarios -->
+  <section id="itinerarios" class="container py-5">
+    <h2 class="text-center mb-4">Explora Nuestras Rutas de Safari</h2>
+    <div class="row">
+
+      <!-- Safari al Amanecer -->
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-sm rounded">
+          <img src="img/amanecer-safari.jpg" class="card-img-top rounded-top" alt="Safari al Amanecer">
+          <div class="card-body">
+            <h5 class="card-title">Safari al Amanecer</h5>
+            <p class="card-text">Un safari temprano para observar los animales más activos al amanecer.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <span><i class="fas fa-clock"></i> 6:00 AM</span>
+              <span><i class="fas fa-hourglass-half"></i> 4 horas</span>
+            </div>
+          </div>
+          <button class="btn btn-success mt-3">Reservar Ahora</button>
+        </div>
+      </div>
+
+    </div>
+      <!-- Safari al Atardecer -->
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-sm rounded">
+          <img src="img/atardecer-safari.jpg" class="card-img-top rounded-top" alt="Safari al Atardecer">
+          <div class="card-body">
+            <h5 class="card-title">Safari al Atardecer</h5>
+            <p class="card-text">Vive la magia del atardecer mientras observas a los animales preparándose para la noche.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <span><i class="fas fa-clock"></i> 4:00 PM</span>
+              <span><i class="fas fa-hourglass-half"></i> 5 horas</span>
+            </div>
+          </div>
+          <button class="btn btn-success mt-3">Reservar Ahora</button>
+        </div>
+      </div>
+
+      <!-- Safari Nocturno -->
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-sm rounded">
+          <img src="img/nocturno-safari.jpg" class="card-img-top rounded-top" alt="Safari Nocturno">
+          <div class="card-body">
+            <h5 class="card-title">Safari Nocturno</h5>
+            <p class="card-text">Explora la fauna nocturna en este safari único bajo las estrellas.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <span><i class="fas fa-clock"></i> 8:00 PM</span>
+              <span><i class="fas fa-hourglass-half"></i> 6 horas</span>
+            </div>
+          </div>
+          <button class="btn btn-success mt-3">Reservar Ahora</button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Calendario Interactivo para Selección de Fechas -->
+    <h3 class="text-center mt-5">Elige tu fecha de Safari</h3>
+    <div class="row">
+      <div class="col-12 text-center">
+        <input type="date" class="form-control w-50 mx-auto" id="fecha-safari">
+      </div>
+    </div>
+  </section>
+
+  <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
