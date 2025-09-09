@@ -1,95 +1,134 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Itinerario - Safari Aventura</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet"> <!-- Font Awesome para iconos -->
+
+  <!-- (Opcional pero recomendado) alinear versión con index.html -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
 </head>
 <body>
 
-  <!-- Encabezado -->
-  <header class="bg-success text-white py-4">
-    <div class="container">
-      <h1 class="display-4">Itinerario del Safari</h1>
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link text-white" href="index.html">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="itinerario.html">Itinerario</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
+  <!-- Encabezado (título) -->
+<header class="bg-success text-white py-4">
+  <div class="container text-center">
+    <h1 class="display-5 mb-0">Itinerario del Safari</h1>
+  </div>
+</header>
+
+<!-- Navbar centrada (respeta el CSS del profesor) -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container">
+    <!-- Botón hamburguesa -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#mainNav"
+      aria-controls="mainNav"
+      aria-expanded="false"
+      aria-label="Mostrar navegación">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menú centrado -->
+    <div class="collapse navbar-collapse justify-content-center" id="mainNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="itinerario.html">Itinerario</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contacto.html">Contacto</a>
+        </li>
+      </ul>
     </div>
-  </header>
+  </div>
+</nav>
+
 
   <!-- Sección de Itinerarios -->
-  <section id="itinerarios" class="container py-5">
-    <h2 class="text-center mb-4">Explora Nuestras Rutas de Safari</h2>
-    <div class="row">
+  <main>
+    <section id="itinerarios" class="container py-5">
+      <h2 class="text-center mb-4">Explora Nuestras Rutas de Safari</h2>
 
-      <!-- Safari al Amanecer -->
-      <div class="col-md-4 mb-4">
-        <div class="card shadow-sm rounded">
-          <img src="img/amanecer-safari.jpg" class="card-img-top rounded-top" alt="Safari al Amanecer">
-          <div class="card-body">
-            <h5 class="card-title">Safari al Amanecer</h5>
-            <p class="card-text">Un safari temprano para observar los animales más activos al amanecer.</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <span><i class="fas fa-clock"></i> 6:00 AM</span>
-              <span><i class="fas fa-hourglass-half"></i> 4 horas</span>
+      <div class="row g-4">
+        <!-- Safari al Amanecer -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <img src="img/amanecer-safari.jpg" class="card-img-top" alt="Safari al Amanecer" loading="lazy" />
+            <div class="card-body">
+              <h5 class="card-title">Safari al Amanecer</h5>
+              <p class="card-text">Un safari temprano para observar los animales más activos al amanecer.</p>
+              <div class="d-flex justify-content-between align-items-center text-muted small">
+                <span><i class="fas fa-clock me-1"></i> 6:00 AM</span>
+                <span><i class="fas fa-hourglass-half me-1"></i> 4 horas</span>
+              </div>
+            </div>
+            <div class="card-footer bg-transparent border-0 pt-0">
+              <button class="btn btn-success w-100">Reservar Ahora</button>
             </div>
           </div>
-          <button class="btn btn-success mt-3">Reservar Ahora</button>
+        </div>
+
+        <!-- Safari al Atardecer -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <img src="img/atardecer-safari.jpg" class="card-img-top" alt="Safari al Atardecer" loading="lazy" />
+            <div class="card-body">
+              <h5 class="card-title">Safari al Atardecer</h5>
+              <p class="card-text">Vive la magia del atardecer mientras observas a los animales preparándose para la noche.</p>
+              <div class="d-flex justify-content-between align-items-center text-muted small">
+                <span><i class="fas fa-clock me-1"></i> 4:00 PM</span>
+                <span><i class="fas fa-hourglass-half me-1"></i> 5 horas</span>
+              </div>
+            </div>
+            <div class="card-footer bg-transparent border-0 pt-0">
+              <button class="btn btn-success w-100">Reservar Ahora</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Safari Nocturno -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <img src="img/nocturno-safari.jpg" class="card-img-top" alt="Safari Nocturno" loading="lazy" />
+            <div class="card-body">
+              <h5 class="card-title">Safari Nocturno</h5>
+              <p class="card-text">Explora la fauna nocturna en este safari único bajo las estrellas.</p>
+              <div class="d-flex justify-content-between align-items-center text-muted small">
+                <span><i class="fas fa-clock me-1"></i> 8:00 PM</span>
+                <span><i class="fas fa-hourglass-half me-1"></i> 6 horas</span>
+              </div>
+            </div>
+            <div class="card-footer bg-transparent border-0 pt-0">
+              <button class="btn btn-success w-100">Reservar Ahora</button>
+            </div>
+          </div>
         </div>
       </div>
 
-    </div>
-      <!-- Safari al Atardecer -->
-      <div class="col-md-4 mb-4">
-        <div class="card shadow-sm rounded">
-          <img src="img/atardecer-safari.jpg" class="card-img-top rounded-top" alt="Safari al Atardecer">
-          <div class="card-body">
-            <h5 class="card-title">Safari al Atardecer</h5>
-            <p class="card-text">Vive la magia del atardecer mientras observas a los animales preparándose para la noche.</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <span><i class="fas fa-clock"></i> 4:00 PM</span>
-              <span><i class="fas fa-hourglass-half"></i> 5 horas</span>
-            </div>
+      <!-- Calendario Interactivo para Selección de Fechas -->
+      <div class="mt-5">
+        <h3 class="text-center mb-3">Elige tu fecha de Safari</h3>
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-6">
+            <label for="fecha-safari" class="form-label">Selecciona una fecha</label>
+            <input type="date" class="form-control" id="fecha-safari" aria-describedby="ayuda-fecha" />
+            <div id="ayuda-fecha" class="form-text">Usa el calendario para elegir tu día ideal.</div>
           </div>
-          <button class="btn btn-success mt-3">Reservar Ahora</button>
         </div>
       </div>
-
-      <!-- Safari Nocturno -->
-      <div class="col-md-4 mb-4">
-        <div class="card shadow-sm rounded">
-          <img src="img/nocturno-safari.jpg" class="card-img-top rounded-top" alt="Safari Nocturno">
-          <div class="card-body">
-            <h5 class="card-title">Safari Nocturno</h5>
-            <p class="card-text">Explora la fauna nocturna en este safari único bajo las estrellas.</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <span><i class="fas fa-clock"></i> 8:00 PM</span>
-              <span><i class="fas fa-hourglass-half"></i> 6 horas</span>
-            </div>
-          </div>
-          <button class="btn btn-success mt-3">Reservar Ahora</button>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- Calendario Interactivo para Selección de Fechas -->
-    <h3 class="text-center mt-5">Elige tu fecha de Safari</h3>
-    <div class="row">
-      <div class="col-12 text-center">
-        <input type="date" class="form-control w-50 mx-auto" id="fecha-safari">
-      </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <script src="js/script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

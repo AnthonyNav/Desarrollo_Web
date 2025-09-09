@@ -22,7 +22,7 @@ h1, h2, h3, h4, h5 {
 /* Estilos del Navbar */
 .navbar {
   background-color: #343a40; /* Navbar con el mismo color que el header */
-  position: fixed;
+  position: static;
   width: 100%;
   z-index: 1000;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
